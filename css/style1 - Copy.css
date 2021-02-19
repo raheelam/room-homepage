@@ -1,4 +1,4 @@
-body,div,img,a{
+body,div,img{
     margin: 0px;
     padding: 0px;
     font-family: "spartan";
@@ -13,13 +13,9 @@ body,div,img,a{
 .slideshow-container {
   /*max-width: 1000px; 
   border: 1px solid red;
-  grid-template-columns: 60% repeat(auto-fill, minmax(2500px, 1fr));
   */
- margin-bottom: -2.5rem;
-  margin-top: -4rem;
-  
-  
-
+  position: relative; 
+ 
  
  
  /* margin: auto; */
@@ -27,26 +23,18 @@ body,div,img,a{
 
 /* Hide the images by default */
 .mySlides {
-  /*display: none*/
-  
-}
-.slideContent{
-  
-  display: grid;
-  grid-template-columns:  repeat(auto-fill, minmax(500px, 1fr));
+  display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  display:inline-block;
   cursor: pointer;
-  position: relative;
-  bottom: 5rem;
-  left: 56%;
+  position: absolute;
+  bottom: 0%;
+  left: 60%;
   width: auto;
   margin-bottom: 0px; /* -22 to enter next element */
-  
-  padding: 7px 30px;
+  padding: 20px 30px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -58,7 +46,7 @@ body,div,img,a{
 
 /* Position the "next button" to the right */
 .next {
- left: 57%; 
+ left: 65%; 
   /*border-radius: 3px 0 0 3px;*/
 }
 
@@ -72,7 +60,7 @@ body,div,img,a{
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute; /* doesnt do anything  */
+  position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -139,14 +127,22 @@ nav ul li{
 nav{
    
     
-    position: relative;
-    top: 4rem;
+    position: absolute;
+    top: 8%;
     
-    
+    margin-top: -22px;
 }
 
 .mySlides{
   
+}
+.slideContent{
+  margin: 0px;
+   
+   display: grid;
+   grid-template-columns: 60% 40%;
+   
+    /*472px*/
 }
 
 .slider_image{
@@ -186,77 +182,17 @@ h4{
   /*height: 420px;*/
   height: 100%;
 }
-#test,html{
-  width: 100%;
-}
-#bottom{
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  
-  }
 
-  #bottom div{
-    justify-self: center;
-  }
+#bottom{
+   /*border: 1px solid red; */
+   clear: both;
+  
+   display: grid;
+   grid-template-columns: 30% 40% 30%;
+}
 
 #bottom div:nth-child(2){
     padding: 28px 60px 0px 60px;
    
 }
- 
-@media screen and (max-width: 400px){
-  ul a li{
-    
-    font-size: 0.7rem;
-    padding: 2px;
-    
-  }
-
-  #title{
-    font-size: 0.8rem;
-    font-weight: bolder;
-    margin-right: 8px;
-  }
-
-  
- }
-
-
-
-@media screen and (max-width:1024px){
-  .slideContent{
-  
-    display: grid;
-    grid-template-columns:  repeat(auto-fill, minmax(100%, 1fr));
-  }
-  #bottom{
-    display: grid;
-    grid-template-columns:  repeat(auto-fill, minmax(100%, 1fr));
-  }
-  .slider_text{
-    padding: 16px;
-    padding-bottom: 54px;
-  }
-  .prev, .next{
-    padding: 4px 20px;
-    bottom: 3rem;
-    left: 16px;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 1024px){
-
-  .slider_text{
-    padding-top: 16px;
-    padding-left: 60px;
-    padding-bottom: 60px;
-  }
-  .prev, .next{
-    padding: 4px 20px;
-    bottom: 3rem;
-    left: 60px;
-  }
- 
-  
- }
 
