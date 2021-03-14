@@ -41,8 +41,8 @@ body,div,img,a{
   display:inline-block;
   cursor: pointer;
   position: relative;
-  bottom: 5rem;
-  left: 56%;
+  bottom: 2.5rem; 
+  left: 50%; 
   width: auto;
   margin-bottom: 0px; /* -22 to enter next element */
   
@@ -58,7 +58,7 @@ body,div,img,a{
 
 /* Position the "next button" to the right */
 .next {
- left: 57%; 
+ left: 49.7%; 
   /*border-radius: 3px 0 0 3px;*/
 }
 
@@ -127,13 +127,21 @@ nav ul li{
     padding: 10px; 
     font-size: 12px;
    /* width: auto; */
+    /*color: rgb(46, 41, 41); */
     color: white;
    
 }
-
+nav ul li:hover{
+    background:  black;
+}
 #title{
   font-size: 24px;
   margin-right: 16px;
+}
+
+#title:hover{
+  background: none;
+  color: black; 
 }
 
 nav{
@@ -192,7 +200,7 @@ h4{
 #bottom{
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  
+   column-gap: 5%;
   }
 
   #bottom div{
@@ -239,7 +247,7 @@ h4{
   }
   .prev, .next{
     padding: 4px 20px;
-    bottom: 3rem;
+   /* bottom: 3rem; */
     left: 16px;
   }
 }
