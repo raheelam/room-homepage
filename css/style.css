@@ -1,4 +1,4 @@
-body,div,img,a{
+body,div,img,a,nav,ul,li,h1,h2,h3,html{
     margin: 0px;
     padding: 0px;
     font-family: "spartan";
@@ -6,17 +6,23 @@ body,div,img,a{
 
 /* *{box-sizing:border-box} */
 #top{
-  height: 70%;
+  
+
 }
 
+
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container, .slideContent{
   /*max-width: 1000px; 
   border: 1px solid red;
   grid-template-columns: 60% repeat(auto-fill, minmax(2500px, 1fr));
   */
- margin-bottom: -2.5rem;
-  margin-top: -4rem;
+  height: auto;
+  
+ /*margin-bottom: -2.5rem;
+  margin-top: -4rem; */
+  margin-bottom: -1.3rem;
+  margin-top: -0.9rem; 
   
   
 
@@ -33,7 +39,8 @@ body,div,img,a{
 .slideContent{
   
   display: grid;
-  grid-template-columns:  repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: 66.70% 32.30%; 
+ /* grid-template-columns:  repeat(auto-fill, minmax(500px, 1fr)); */
 }
 
 /* Next & previous buttons */
@@ -41,8 +48,8 @@ body,div,img,a{
   display:inline-block;
   cursor: pointer;
   position: relative;
-  bottom: 2.5rem; 
-  left: 50%; 
+  bottom: 1.3rem; /* 2.5rem*/
+  left: 66.7%; 
   width: auto;
   margin-bottom: 0px; /* -22 to enter next element */
   
@@ -58,7 +65,7 @@ body,div,img,a{
 
 /* Position the "next button" to the right */
 .next {
- left: 49.7%; 
+ left: 66.2%; 
   /*border-radius: 3px 0 0 3px;*/
 }
 
@@ -148,7 +155,8 @@ nav{
    
     
     position: relative;
-    top: 4rem;
+    top: 26px;
+    margin-left: 5%;
     
     
 }
@@ -169,7 +177,16 @@ nav{
   /*  width: 28%;
     padding: 70px 79px; 
     float: right; */
-    padding: 60px 79px; 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    padding: 57px 79px ; 
     
     
 }
@@ -190,29 +207,24 @@ h4{
     
     
 }
-.slider_image img{
-  /*height: 420px;*/
-  height: 100%;
-}
+
 #test,html{
   width: 100%;
 }
 #bottom{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns:  1fr 1fr 1fr;
    /*grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
    column-gap: 5%; */
   }
 
-  #bottom div{
-    justify-self: center;
-  }
+  
 
 #bottom div:nth-child(2){
     padding: 28px 60px 0px 60px;
    
 }
- @media screen and (max-width: 400px){
+ @media screen and (max-width: 412px){
   ul a li{
     
     font-size: 0.7rem;
@@ -248,7 +260,7 @@ h4{
   }
   .prev, .next{
     padding: 4px 20px;
-   /* bottom: 3rem; */
+    margin-bottom: 2px;
     left: 16px;
   }
 }
@@ -262,7 +274,7 @@ h4{
   }
   .prev, .next{
     padding: 4px 20px;
-    bottom: 3rem;
+    
     left: 60px;
   }
  
