@@ -21,7 +21,7 @@ body,div,img,a,nav,ul,li,h1,h2,h3,html{
   
  /*margin-bottom: -2.5rem;
   margin-top: -4rem; */
-  margin-bottom: -1.3rem;
+  margin-bottom: -1.39rem;
   margin-top: -0.9rem; 
   
   
@@ -48,7 +48,7 @@ body,div,img,a,nav,ul,li,h1,h2,h3,html{
   display:inline-block;
   cursor: pointer;
   position: relative;
-  bottom: 1.3rem; /* 2.5rem*/
+  bottom: 1.38rem; /* 2.5rem*/
   left: 66.7%; 
   width: auto;
   margin-bottom: 0px; /* -22 to enter next element */
